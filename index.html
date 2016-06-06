@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Enhancing Oil Recovery - Tom Underwood</title>
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/simple.css" id="theme">
+	<link rel="stylesheet" href="main.css">
+	<!--Add support for earlier versions of Internet Explorer -->
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<[endif]-->
+	<meta name="description" content="CMS 2016 Presentation">
+	<meta name="author" content="Tom Underwood">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
+</head>
+
+<body>
+	<!-- Wrap the entire slide show in a div using the "reveal" class. -->
+	<div class="reveal">
+		<!-- Wrap all slides in a single "slides" class -->
+		<div class="slides">
+
+			<!-- Intro slide -->
+			<section id="start" data-background="images/backdrops/backdrop_start.jpg">
+				<br>
+				<h2>Enhancing Oil Recovery</h2>
+				<br>
+				<h4 class="fragment">MD Simulations of Low-Salinity Enhanced Oil Recovery</h4>
+				<br>
+				<h4><b>Tom Underwood</b>, Valentina Erastova, H. Chris Greenwell</h4>
+				<h4><a href="http://thomasunderwood.github.io/" target="_blank">thomasunderwood.github.io</a></h4>
+				<!-- <h4><a href="http://www.dur.ac.uk/thomas.underwood/" target="_blank">www.dur.ac.uk/thomas.underwood</a></h4> -->
+				<h4>CMS 2016</h4>
+				<!-- <h4>7th June 2016</h4> -->
+			  	<a href="http://www.dur.ac.uk" target="_blank"><img src="images/durham.png" alt="Durham University" width="20%"></a>
+			</section>
+
+			<!-- Presentation outline -->
+			<section data-background="images/backdrops/backdrop.jpg">
+				<h2>This Presentation</h2>
+				<br> 
+				<p>A brief introduction to...</p>
+				<ul>
+					<li class="fragment">Low-salinity enhanced oil recovery.</li>
+					<li class="fragment">The role of clay minerals.</li>
+				  	<li class="fragment">Some cool results.</li>
+					<li class="fragment">Some conclusions and questions.</li>
+				</ul>
+			</section>
+
+			<!-- The Problem #1: Global energy demand -->
+			<section data-background="images/backdrops/backdrop.jpg">
+				<h2>Global Energy Demand</h2>
+				<ul>
+					<p class="fragment">By the year 2035 it is predicted that worldwide energy consumption will have increased by approximately 35%.</p>
+					<div class="fragment">
+						<img src="images/Picture1.png" alt=".." width=25% align="right" style="margin:25px 25px"><br>
+						<span style="width: 40%;">Current oil extraction methods only recover approximately a third of the oil within a reservoir.</span>
+					</div>
+					<br><br><br>
+					<p class="fragment" style="font-size:100%;">Optimising oil extraction rates is a <b>big</b> problem!</p>
+				</ul>
+			</section>
+
+			<!-- The solution #1: Enhanced Oil Recovery -->
+			<section data-background="images/backdrops/backdrop.jpg">
+				<h2>A Possible Solution...</h2>
+				<p class="fragment">Enhanced oil recovery (EOR) is a technique used to improve the oil output from a reservoir.</p>
+				<img class="fragment" src="images/Picture2.png" alt="Smiley face" width="48%" style="float: left"><br>
+				<p class="fragment" style="width: 44%; float: right">Using a flooding fluid with lower salinity (compared to seawater) has been shown to improve oil extraction rates, hence low-salinity EOR.</p>
+			</section>
+
+			<!-- How LowSal EOR works (we think)... -->
+			<section data-background="images/backdrops/backdrop.jpg">
+				<section data-transition="none-out">
+					<h2>How we think it works...</h2>
+					<img src="images/Picture3.png" alt="Smiley face" valign="center">
+				</section>
+				<section data-transition="none">
+					<h2>How we think it works...</h2>
+					<img src="images/Picture3a.png" alt="Smiley face" valign="center">
+				</section>
+				<section data-transition="none">
+					<h2>How we think it works...</h2>
+					<img src="images/Picture3b.png" alt="Smiley face" valign="center">
+				</section>
+				<section data-transition="none">
+					<h2>How we think it works...</h2>
+					<img src="images/Picture3c.png" alt="Smiley face" valign="center">
+				</section>
+				<section data-transition="none">
+					<h2>How we think it works...</h2>
+					<img src="images/Picture3d.png" alt="Smiley face" valign="center">
+				</section>
+				<section data-transition="none-in">
+					<h2>How we think it works...</h2>
+					<img src="images/Picture4.png" alt="Smiley face" valign="center">
+				</section>
+			</section>
+
+			<section data-background="images/backdrops/backdrop.jpg">
+				<h2>Research Questions</h2><br>
+				<ul>
+					<p class="fragment">Low-salinity EOR works, but the fundamental mechanisms are not well understood.</p>
+					<!-- <p class="fragment">What techniques can we use to help understand the phenomenon of low-salinity EOR.</p> -->
+					<p class="fragment">Can we use simulations to aid our understanding of low-salinity EOR?</p>
+					<!-- <p class="fragment">Can we use simulations to help suggest any future experiments?</p> -->
+					<p class="fragment">Can our results help increase oil extraction yield?</p>
+				</ul>
+			</section>
+
+			<!-- How LowSal EOR works (we think)... -->
+			<!-- <section data-background="images/backdrops/backdrop.jpg">
+				<section data-transition="none-out">
+					<h2>Where we work...</h2><br>
+					<img src="images/Scale1.png" alt="Smiley face" valign="center">
+				</section>
+				<section data-transition="none">
+					<h2>Where we work...</h2><br>
+					<img src="images/Scale2.png" alt="Smiley face" valign="center">
+				</section>
+				<section data-transition="none">
+					<h2>Where we work...</h2><br>
+					<img src="images/Scale3.png" alt="Smiley face" valign="center">
+				</section>
+				<section data-transition="none-in">
+					<h2>Where we work...</h2><br>
+					<img src="images/Scale4.png" alt="Smiley face" valign="center">
+				</section>
+			</section> -->
+
+			<!-- Tecnical setup -->
+			<section data-background="images/backdrops/backdrop.jpg">
+				<section data-transition="none-out">
+					<h2>Basic MD Setup</h2>
+					<img src="images/setup.png" alt="Smiley face" width="80%">
+				</section>
+				<section data-transition="none">
+					<h2>Basic MD Setup</h2>
+					<img src="images/setup1.png" alt="Smiley face" width="80%">
+				</section>
+				<section data-transition="none">
+					<h2>Basic MD Setup</h2>
+					<img src="images/setup2.png" alt="Smiley face" width="80%">
+				</section>
+				<section data-transition="none">
+					<h2>Basic MD Setup</h2>
+					<img src="images/setup3.png" alt="Smiley face" width="80%">
+				</section>
+			</section>
+
+			<!-- The solution #1: Enhanced Oil Recovery -->
+			<section data-background="images/backdrops/backdrop.jpg">
+				<h2>Technical Details</h2>
+				<div style="width: 44%; float: left; line-height:60%">
+					<div class="fragment" style="text-align:center">
+						<p>Minerals:</p>
+						<ul style="font-size:24px">
+							<li>Montmorillonite</li>
+							<li>Pyrophyllite</li>
+							<li>Illite</li>
+							<li>Kaolinite</li>
+							<li>Quartz</li>
+						</ul>
+					</div><br>
+					<div class="fragment" style="text-align:center">
+						<p>Organics:</p>
+						<ul style="font-size:24px">
+							<li>Decane</li>
+							<li>Decanoic Acid</li>
+							<li>Decanamine</li>
+							<li>Napthelene</li>
+						</ul>
+					</div>
+				</div>
+				<div style="width: 44%; float: right; line-height:60%">
+					<div class="fragment" style="text-align:center">
+						<p>Salts:</p>
+						<ul style="font-size:24px">
+							<li>NaCl</li>
+							<li>KCl</li>
+							<li>CaCl2</li>
+							<li>MgCl2</li>
+						</ul>
+					</div><br><br>
+					<div class="fragment" style="text-align:center">
+						<p>Concentrations:</p>
+						<ul style="font-size:24px">
+							<li>0 ppt (freshwater)</li>
+							<li>1 ppt (very low-salinity water)</li>
+							<li>5 ppt (low-salinity water)</li>
+							<li>35 ppt (seawater)</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<!-- The Main Story -->
+			<section data-background="images/backdrops/backdrop.jpg">
+				<h2>The Main Story...</h2>
+				<p class="fragment">There are several conditions required for low-salinity EOR:</p>
+				<ul>
+					<li class="fragment">A low-salinity flood!</p>
+					<li class="fragment">Divalent cations in formation water.</p>
+					<li class="fragment">Polar components in the oil.</p>
+					<li class="fragment">The presence of clay minerals.</p>
+				</ul>
+				<p class="fragment">Our aim is to analyse these conditions using MD.</p>
+			</section>
+
+			<!-- The Main Story, Part 1 -->
+			<section data-background="images/backdrops/backdrop.jpg">
+				<h2>Part 1: Let us examine...</h2>
+				<br>
+				<ul>
+					<li>A low-salinity flood!</p>
+					<li>Divalent cations in formation water.</p>
+					<li>Polar components in the oil.</p>
+					<li class="fragment highlight-blue">The presence of clay minerals.</p>
+				</ul>
+			</section>
+			<section data-background="images/backdrops/backdrop_ions.jpg">
+				<h3>Montmorillonite and Decane</h3>
+				<video controls class="stretch" src="videos/mmt_decane.mpg" style="border:1px solid black;"></video>
+				<div class="footer"><p style="font-size:50%"><i>T. Underwood et al.</i> (2015) J. Phys. Chem. C.</p></div>
+			</section>
+			<section data-background="images/backdrops/backdrop_ions.jpg">
+				<h3>Pyrophyllite and Decane</h3>
+				<video controls class="stretch" src="videos/pyro_decane.mpg" style="border:1px solid black;"></video>
+				<div class="footer"><p style="font-size:50%"><i>T. Underwood et al.</i> (in preperation)</p></div>
+			</section>
+			<section data-background="images/backdrops/backdrop.jpg">
+				<h3>Kaolinite and Decane</h3>
+				<video controls class="stretch" src="videos/kaol_decane_rotated.mpg" style="border:1px solid black;"></video>
+				<div class="footer"><p style="font-size:50%"><i>T. Underwood et al.</i> (2016) J. Phys. Chem. C.</p></div>
+			</section>
+			<section data-background="images/backdrops/backdrop.jpg">
+				<h3>What do the simulations tell us about <br> the presence of clay minerals?</h3>
+				<br>
+				<ul>
+					<li class="fragment">Different clays have significantly different properties.</li>
+					<li class="fragment">Clays with large CEC are not a major player in low-sal EOR.</li>
+					<li class="fragment">This agrees with recent experimental results whereby <br> kaolinite plays a dominant role.
+					<div class="footer"><p style="font-size:50%"><i>R. Kareem et al.</i> (201x) FILL</p></div></li>
+				</ul>
+			</section>
+
+			<!-- The Main Story, Part 2 -->
+			<section data-background="images/backdrops/backdrop.jpg">
+				<h2>Part 2: let us examine...</h2>
+				<br>
+				<ul>
+					<li>A low-salinity flood!</li>
+					<li>Divalent cations in formation water.</li>
+					<li class="fragment highlight-blue">Polar components in the oil.</li>
+					<li>The presence of clay minerals.</li>
+				</ul>
+			</section>
+			<section data-background="images/backdrops/backdrop_ions.jpg">
+				<h3>Montmorillonite and Decanoic Acid</h3>
+				<video controls class="stretch" src="videos/dec_acid.mpg" style="border:1px solid black;"></video>
+				<div class="footer"><p style="font-size:50%"><i>T. Underwood et al.</i> (2015) J. Phys. Chem. C.</p></div>
+			</section>
+			<section data-background="images/backdrops/backdrop_ions.jpg">
+				<h3>What about the pH?</h3>
+				<video controls class="stretch" src="videos/dec_acid_dep.mpg" style="border:1px solid black;"></video>
+				<div class="footer"><p style="font-size:50%"><i>T. Underwood et al.</i> (2015) J. Phys. Chem. C.</p></div>
+			</section>
+			<section data-background="images/backdrops/backdrop.jpg">
+				<h2>...but wait...</h2>
+				<ul>
+					<li>A low-salinity flood!</li>
+					<li class="fragment highlight-blue">Divalent cations in formation water.</li>
+					<font color='#1b91ff'><li>Polar components in the oil.</li></font>
+					<li>The presence of clay minerals.</li>
+				</ul>
+			</section>
+			<section data-background="images/backdrops/backdrop_ions.jpg">
+				<h3>What about divalent cations?</h3>
+				<video controls class="stretch" src="videos/dec_acid_dep_caMMT.mpg" style="border:1px solid black;"></video>
+				<div class="footer"><p style="font-size:50%"><i>T. Underwood et al.</i> (2015) J. Phys. Chem. C.</p></div>
+			</section>
+			<section data-background="images/backdrops/backdrop_ions.jpg">
+				<h3>What's going on?</h3>
+				<img src="images/cation_bridging_snapshot.png" alt="Smiley face" valign="center"  width="40%" style="border:1px solid black;">
+				<div class="footer"><p style="font-size:50%"><i>T. Underwood et al.</i> (2015) J. Phys. Chem. C.</p></div>
+			</section>			
+			<section data-background="images/backdrops/backdrop.jpg">
+			<h3>What do the simulations tell us about <br> polar components in the oil?</h3>
+				<br>
+				<ul style="width: 44%; float: left;">
+					<!-- <li class="fragment">Polar oil components can interact with clay minerals.</li> -->
+					<li class="fragment">We must consider pH to fully understand EOR.</li>
+					<li class="fragment">Cation bridging occurs with divalent ions.</li>
+					<li class="fragment">Ionic content is very important!</li>
+				</ul>
+				<img class="fragment" src="images/clay_bridge.png" alt="Smiley face" valign="right"  width="40%">
+			</section>
+
+			<!-- The Main Story, Part 3  -->
+			<section data-background="images/backdrops/backdrop.jpg">
+				<h2>Part 3: let us examine...</h2>
+				<br>
+				<ul>
+					<li class="fragment highlight-blue">A low-salinity flood!</li>
+					<li>Divalent cations in formation water.</li>
+					<li>Polar components in the oil.</li>
+					<li>The presence of clay minerals.</li>
+				</ul>
+			</section>
+			<section data-background="images/backdrops/backdrop.jpg">
+				<h3>What about salt concentration? </h3>
+				<video controls class="stretch" src="videos/md_comparison.mp4" style="border:1px solid black;"></video>
+				<div class="footer"><p style="font-size:50%"><i>T. Underwood et al.</i> (2015) J. Phys. Chem. C.</p></div>
+			</section>
+			<!-- The Main Story -->
+			<section data-background="images/backdrops/backdrop.jpg">
+			<h3>What do the simulations tell us about <br> about the salt concentration?</h3>
+				<br>
+				<p class="fragment">There is no correlation between salt concentration and oil-clay interactions at the molecular level.</p>
+				<br>
+				<p class="fragment">Is this result suprising?</p>
+				<br>
+				<p class="fragment">What else could cause the low-salinity effect?</p>
+			</section>
+
+			<section data-background="images/backdrops/backdrop.jpg">
+				<h3>Take home message...</h3>
+				<h3 class="fragment">Ionic content > Ionic concentration</h3>
+			</section>
+
+			<!-- Conclusions -->
+			<section data-background="images/backdrops/backdrop.jpg">
+				<h2>Overall Conclusions</h2>
+				<br>
+				<p class="fragment">MD simulations offer an ideal opportunity to interpret the phenomenon of low-salinity EOR at the molecular level. </p>
+				<p class="fragment">We have been able to successfully describe some of the experimental observations of low-salinity EOR.</p>
+				<p class="fragment">The <i>low-salinity</i> aspect remains elusive however.</p>
+				<!-- <p class="fragment">To fully understand organic-clay interactions, are dominated by the species of ions in the system.</p> -->
+			</section>
+			<!-- <section data-background="images/backdrops/backdrop.jpg">
+				<h3>What can Molecular Modelling tell us?</h3>
+				<ul>
+					<p class="fragment">The pH and charge content of the oil plays a major role.</p>
+					<p class="fragment">As does the ionic content of the flood.</p>
+					<p class="fragment">The salt concentration does not alter the fundamental interactions between the oil and the mineral surfaces.</p>
+					<p class="fragment">However, the salt concentration will play a major role in the stability of clay minerals within the reservoir.</p>
+				</ul> -->
+			<!-- </section> -->
+
+			<!-- Acknowledgements -->
+			<section data-background="images/backdrops/backdrop_cloudy.jpg">
+				<h2>I would like to thank...</h2>
+				<br>
+				<h4 class="fragment">Prof. Chris Greenwell</h4>
+				<h4 class="fragment">Dr. Valentina Erastova</h4>
+				<h4 class="fragment">Dr. Pablo Cubillas</h4>
+				<h4 class="fragment">Rikan Kareem</h4>				
+			  	<a href="http://www.clays.org/" target="_blank"><img src="images/The_clay_minerals_society_logo.jpg" alt="CMG" width="15%" class="fragment" style="border:1px solid black;"></a>
+			  	<a href="http://www.bp.com/" target="_blank"><img src="images/BP_Helios_logo.png" alt="BP" width="15%" class="fragment" style="margin:25px 25px"></a>
+			</section>
+	
+			<!-- Outro slide -->
+			<section class="center" data-background="images/backdrops/backdrop_end.jpg">
+				<h2>Thank you for listening</h2>
+				<!-- <br>
+				<h5><i>T. Underwood et al.</i> (2015) J. Phys. Chem. C.</p>
+				<h5><i>T. Underwood et al.</i> (2016) J. Phys. Chem. C. (accepted)</p>
+				<br> -->
+				<h2>Any Questions?</h2>
+				<br>
+				<!-- <h4><a href="http://www.dur.ac.uk/thomas.underwood/" target="_blank">dur.ac.uk/thomas.underwood</a></h4> -->
+				<h4><a href="http://thomasunderwood.github.io/" target="_blank">thomasunderwood.github.io</a></h4>
+				<h4><a href="http://www.dur.ac.uk/chris.greenwell/" target="_blank">dur.ac.uk/chris.greenwell</a></h4>
+				<br>
+				<h4><a href="#/start">Back to the start...</a></h4>
+			</section>
+
+		</div>
+	</div>
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+	<script>
+		// Required, even if empty.
+		Reveal.initialize({
+			controls: true,    				// Display controls in the bottom right corner
+			progress: true,					// Display a presentation progress bar
+			slideNumber: false,    			// Display the page number of the current slide
+			history: true,     				// Push each slide change to the browser history
+			center: true,					// Vertical centering of slides
+			loop:false,    				 	// Loop the presentation
+
+			transition: 'slide', 			// none/fade/slide/convex/concave/zoom
+			backgroundTransition: 'slide',
+
+			// Factor of the display size that should remain empty around the content
+			margin: 0.1,
+
+			// Bounds for smallest/largest possible scale to apply to content
+			minScale: 0.2,
+			maxScale: 1.5,
+
+			dependencies: [
+				// Cross-browser shim that fully implements classList - https://github.com/eligrey/classList.js/
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+
+				// MathJax
+				{ src: 'plugin/math/math.js', async: true }
+			]
+		});
+	</script>
+</body>
+</html>
